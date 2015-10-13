@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Ресторан</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/owl.carousel.css">
+  <link rel="stylesheet" href="static/css/owl.theme.css">
+  <link rel="stylesheet" href="static/css/site/normalize.css">
+  <link rel="stylesheet" href="static/css/site/fonts.css">
+  <link rel="stylesheet" href="static/css/site/style.css">
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="logo">
+            <img src="static/img/logo.png" class="img-responsive" alt="">
+          </div>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="#">О ресторане</a>
+            </li>
+            <li class="visible-lg">
+              <a href="#">Новости</a>
+            </li>
+            <li class="">
+              <a href="#">Меню</a>
+            </li>
+            <li class="visible-lg">
+              <a href="#">Галерея</a>
+            </li>
+            <li class="">
+              <a href="#">Банкеты</a>
+            </li>
+            <li class="">
+              <a href="#">Команда</a>
+            </li>
+            <li class="visible-lg">
+              <a href="#">Отзывы</a>
+            </li>
+            <li class="">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn modal-button" data-toggle="modal" data-target="#myModal">
+            Забронировать
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="static/img/close.png" alt=""></span></button>
+                <h4 class="contact-box-consult__title">Забронировать столик</h4>
+              </div>
+              <div class="modal-body">
+                <form action="" method="POST" role="form">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label for="">Имя</label>
+                        <input type="text" class="form-control" id="">
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label for="">Email</label>
+                        <input type="text" class="form-control" id="">
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <label for="">Телефон</label>
+                      <input type="tel" class="form-control" id="">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label for="">Дата</label>
+                        <input type="datetime" class="form-control" id="" value="11/09/2015">
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label for="">Время</label>
+                        <input type="text" class="form-control" id="" value="18:00">
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <label for="">Количество гостей</label>
+                      <input type="text" class="form-control" id="" value="10">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <label for="">Сообщение</label>
+                        <textarea name="message" class="form-control"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="submit" class="order-btn">забронировать</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+    </nav>
+    <div class="adress">
+      <div class="adress__item">
+        <i class="fa fa-map-marker"></i>
+        <span>Новочеркасский проспект, 33</span>
+      </div>
+      <!-- /.adress__item -->
+      <div class="adress__item">
+        <i class="fa fa-phone"></i>
+        <span class="adress__item-phone">8 (812) 643-89-99</span>
+      </div>
+      <!-- /.adress__item -->
+    </div>
+    <!-- /.adress -->
+    <div class="angle-down">
+      <a href="#team" class="angle-down__link">
+        <i class="fa fa-angle-down"></i>
+      </a>
+    </div>
+    <!-- /.angle-down -->
+    <div class="slider owl-carousel owl-theme" id="slider">
+      <div class="slider__item">
+        <div class="slider__content">
+          <div class="container">
+            <div class="col-sm-12">
+              <h1 class="slider__slogan">Первый греческий ресторан в спб</h1>
+              <p class="slider__p line">В июле, 14-го числа, на Малой Охте открылся ресторан Pomegranate Premium, - первое и единственное в Петербурге заведение, на 100% соответствующие стандартам аутентичной греческой кухни!</p>
+              <div class="social-icons clearfix">
+                <div class="social-icons__item social-icons__item-1"><a href="#">B</a></div>
+                <div class="social-icons__item social-icons__item-2"><a href="#"><i class="fa fa-facebook"></i></a></div>
+                <div class="social-icons__item social-icons__item-3"><a href="#"><i class="fa fa-youtube"></i></a></div>
+                <div class="social-icons__item social-icons__item-4"><a href="#"><i class="fa fa-instagram"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.slider__item -->
+      <div class="slider__item">
+        <div class="slider__content">
+          <div class="container">
+            <div class="col-sm-12">
+              <h1 class="slider__slogan">Первый греческий ресторан в спб</h1>
+              <p class="slider__p line">В июле, 14-го числа, на Малой Охте открылся ресторан Pomegranate Premium, - первое и единственное в Петербурге заведение, на 100% соответствующие стандартам аутентичной греческой кухни!</p>
+              <div class="social-icons clearfix">
+                <div class="social-icons__item social-icons__item-1"><a href="#">B</a></div>
+                <div class="social-icons__item social-icons__item-2"><a href="#"><i class="fa fa-facebook"></i></a></div>
+                <div class="social-icons__item social-icons__item-3"><a href="#"><i class="fa fa-youtube"></i></a></div>
+                <div class="social-icons__item social-icons__item-4"><a href="#"><i class="fa fa-instagram"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.slider__item -->
+      <div class="slider__item">
+        <div class="slider__content">
+          <div class="container">
+            <div class="col-sm-12">
+              <h1 class="slider__slogan">Первый греческий ресторан в спб</h1>
+              <p class="slider__p line">В июле, 14-го числа, на Малой Охте открылся ресторан Pomegranate Premium, - первое и единственное в Петербурге заведение, на 100% соответствующие стандартам аутентичной греческой кухни!</p>
+              <div class="social-icons clearfix">
+                <div class="social-icons__item social-icons__item-1"><a href="#">B</a></div>
+                <div class="social-icons__item social-icons__item-2"><a href="#"><i class="fa fa-facebook"></i></a></div>
+                <div class="social-icons__item social-icons__item-3"><a href="#"><i class="fa fa-youtube"></i></a></div>
+                <div class="social-icons__item social-icons__item-4"><a href="#"><i class="fa fa-instagram"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.slider__item -->
+      <div class="slider__item">
+        <div class="slider__content">
+          <div class="container">
+            <div class="col-sm-12">
+              <h1 class="slider__slogan">Первый греческий ресторан в спб</h1>
+              <p class="slider__p line">В июле, 14-го числа, на Малой Охте открылся ресторан Pomegranate Premium, - первое и единственное в Петербурге заведение, на 100% соответствующие стандартам аутентичной греческой кухни!</p>
+              <div class="social-icons clearfix">
+                <div class="social-icons__item social-icons__item-1"><a href="#">B</a></div>
+                <div class="social-icons__item social-icons__item-2"><a href="#"><i class="fa fa-facebook"></i></a></div>
+                <div class="social-icons__item social-icons__item-3"><a href="#"><i class="fa fa-youtube"></i></a></div>
+                <div class="social-icons__item social-icons__item-4"><a href="#"><i class="fa fa-instagram"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.slider__item -->
+      <div class="slider__item">
+        <div class="slider__content">
+          <div class="container">
+            <div class="col-sm-12">
+              <h1 class="slider__slogan">Первый греческий ресторан в спб</h1>
+              <p class="slider__p line">В июле, 14-го числа, на Малой Охте открылся ресторан Pomegranate Premium, - первое и единственное в Петербурге заведение, на 100% соответствующие стандартам аутентичной греческой кухни!</p>
+              <div class="social-icons clearfix">
+                <div class="social-icons__item social-icons__item-1"><a href="#">B</a></div>
+                <div class="social-icons__item social-icons__item-2"><a href="#"><i class="fa fa-facebook"></i></a></div>
+                <div class="social-icons__item social-icons__item-3"><a href="#"><i class="fa fa-youtube"></i></a></div>
+                <div class="social-icons__item social-icons__item-4"><a href="#"><i class="fa fa-instagram"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.slider__item -->
+      <div class="slider__item">
+        <div class="slider__content">
+          <div class="container">
+            <div class="col-sm-12">
+              <h1 class="slider__slogan">Первый греческий ресторан в спб</h1>
+              <p class="slider__p line">В июле, 14-го числа, на Малой Охте открылся ресторан Pomegranate Premium, - первое и единственное в Петербурге заведение, на 100% соответствующие стандартам аутентичной греческой кухни!</p>
+              <div class="social-icons clearfix">
+                <div class="social-icons__item social-icons__item-1"><a href="#">B</a></div>
+                <div class="social-icons__item social-icons__item-2"><a href="#"><i class="fa fa-facebook"></i></a></div>
+                <div class="social-icons__item social-icons__item-3"><a href="#"><i class="fa fa-youtube"></i></a></div>
+                <div class="social-icons__item social-icons__item-4"><a href="#"><i class="fa fa-instagram"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.slider__item -->
+    </div>
+    <!-- /.slider -->
+  </div>
+  <!-- /.header -->
+  <div class="team" id="team">
+    <div class="vaza">
+      <div class="container">
+        <div class="row">
+          <div class="team__chief visible-lg">
+            <img src="static/img/chef.png" alt="Шеф Йоргос Вайонас">
+            <div class="team__chief-name">
+              Йоргос Вайонас
+            </div>
+            <div class="team__chief-post">
+              шеф-повар
+            </div>
+          </div>
+          <!-- /.team__chief -->
+          <div class="team__right">
+            <div class="team__description">
+              Мастерство команды поваров из Греции Pomagranate Preimium, возглавляемой шеф-поваром Йоргасом Вайносом по достоинсву оценят любители изысканных яств. И утонченные гурманы из тех, кому довелось побывать в Грецииб искушённые терпкими ароматоми Средиземноморья, и те, кто никогда ничего не слышал про кухню эллинов, смогут здесь найти блюдо по своему вкусу и получить свою толику удовольтвия.
+            </div>
+            <!-- /.team__description -->
+            <div class="team__all clearfix">
+              <div class="team__chief hidden-lg">
+                <div class="portrait">
+                  <img src="static/img/chef.png" class="img-responsive" alt="Шеф Йоргос Вайонас">
+                </div>
+                <div class="team__chief-name">
+                  Йоргос Вайонас
+                </div>
+                <div class="team__chief-post">
+                  шеф-повар
+                </div>
+              </div>
+              <div class="team-img">
+                <img src="static/img/chef-team.png" class="img-responsive" alt="Команда">
+              </div>
+              <div class="team__all-description">
+                <div class="team__all-list">
+                  <span class="team__all-title">Слева направо:</span>
+                  <div class="team__all-item">
+                    <span class="team__all-name">Христос Макариос,</span>
+                    <span class="team__all-post">повар холодного цеха,</span>
+                  </div>
+                  <div class="team__all-item">
+                    <span class="team__all-name">Сампсон Костоглидис,</span>
+                    <span class="team__all-post">повар горячего цеха,</span>
+                  </div>
+                  <div class="team__all-item">
+                    <span class="team__all-name">Дионис Дмитриадис,</span>
+                    <span class="team__all-post">повар,</span>
+                  </div><div class="team__all-item">
+                    <span class="team__all-name">Ерато Котсиди,</span>
+                    <span class="team__all-post">повар-кондитер,</span>
+                  </div>
+                  <div class="team__all-item">
+                    <span class="team__all-name">Илиас Папонтониу,</span>
+                    <span class="team__all-post">су-шеф,</span>
+                  </div>
+                  <div class="team__all-item">
+                    <span class="team__all-name">Димитрис Михопулос,</span>
+                    <span class="team__all-post">повар</span>
+                  </div>
+                  <div class="team__all-item">
+                    <span class="team__all-name"></span>
+                    <span class="team__all-post"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.team__all -->
+        </div>
+        <div class="row">
+          <div class="more">
+            <i class="more__icon"></i>
+            <a class="more__title" href="#">Подробнее о команде</a>
+          </div>
+          <!-- /.more -->
+          <div class="angle-down angle-down_color_brown">
+            <a href="#advantages" class="angle-down__link">
+              <i class="fa fa-angle-down"></i>
+            </a>
+          </div>
+          <!-- /.angle-down -->
+        </div>
+      </div>
+    </div>
+    <div class="granate" id="granate"></div>
+    <!-- /.granate -->
+    <div class="granate-part" id="granate-part"></div>
+    <!-- /.granate-part -->
+    <!-- /.vaza -->
+  </div>
+  <!-- /.team -->
+  <div class="advantages clearfix hidden-xs hidden-sm" id="advantages">
+    <div class="advantages__map">
+      <div class="advantages__content clearfix">
+        <img class="advantages__img" src="static/img/map.png" alt="Карта">
+        <div class="advantages__item advantages__item-1">
+          <i></i>
+          <span>Касторья</span>
+          <span class="tooltip"><span class="heading">мастиха</span></span>
+        </div>
+        <div class="advantages__item advantages__item-2">
+          <i></i>
+          <span>Пелла</span>
+          <span class="tooltip"><span class="heading">гранатовый сок</span></span>
+        </div>
+        <div class="advantages__item advantages__item-3">
+          <i></i>
+          <span>Козани</span>
+          <span class="tooltip"><span>шафран <span class="sub-heading">(крокус)</span></span></span>
+        </div>
+        <div class="advantages__item advantages__item-4">
+          <i></i>
+          <span>п-ов Халкидики</span>
+          <span class="tooltip"><span class="heading">орегано</span></span>
+        </div>
+        <div class="advantages__item advantages__item-5">
+          <i></i>
+          <span>Месолонгион</span>
+          <span class="tooltip"><span class="heading">соль</span></span>
+        </div>
+        <div class="advantages__item advantages__item-6">
+          <i></i>
+          <span></span>
+          <span class="tooltip"><span class="heading">оливки</span></span>
+        </div>
+        <div class="advantages__item advantages__item-7">
+          <i></i>
+          <span>о. Крит</span>
+          <span class="tooltip"><span class="heading">дакос</span></span>
+        </div>
+        <div class="advantages__item advantages__item-8">
+          <i></i>
+          <span>о. Хиос</span>
+          <span class="tooltip"><span class="heading">мастиха</span></span>
+        </div>
+        <div class="advantages__item advantages__item-9">
+          <i></i>
+          <span>о. Санторини</span>
+          <span class="tooltip"><span class="heading">каперсы</span></span>
+        </div>
+        <div class="advantages__item advantages__item-10">
+          <i></i>
+          <span></span>
+          <span class="tooltip"><span class="heading">фава</span></span>
+        </div>
+        <div class="advantages__item advantages__item-11">
+          <i></i>
+          <span></span>
+          <span class="tooltip"><span class="heading">оливковое масло</span></span>
+        </div>
+      </div>
+    </div>
+    <!-- /.advantages__map -->
+    <div class="advantages__desription">
+      <p>Мы всегда следуем в фарватере желаний наших клиетов, и гарантируем самое высокое качество ингредиентов.</p>
+      <p>Продукты для кухни поставляются непосредственно из Греции, проходя тройной контроль на соответствие всем требуемым параметрам.</p>
+      <p>Наши партнеры - лучшие греческие компании, даже гранатовый сок - изюменку многих наших блюд - нам привозят из Пеллы!</p>
+    </div>
+    <!-- /.advantages__desription -->
+    <div class="olievs" id="olievs"></div>
+    <!-- /.olievs -->
+  </div>
+  <!-- /.advantages -->
+  <div class="carte">
+    <div class="carte-bg" id="carte">
+      <div class="container carte-inner">
+        <div class="row">
+          <div class="col-lg-12 col-lg-offset-0 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-6 col-xs-offset-3">
+            <div class="carte__title line text-center">Меню</div>
+            <div class="carte__desription text-center">
+              Меню ресторана Pomegranate Premium прделагает самые известные традиционные блюда греческой кухни, такие как Хирино Котси, Мусакас, Мидья ахниста. Гаридес саганаки, очень большой выбор салатов, традиционных закусок, морепродуктов и мясных блюд
+            </div>
+          </div>
+        </div>
+        <div class="row carte__items">
+          <div class="col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 col-xs-12">
+            <div class="carte__item carte__item-1">
+              <div class="carte__item-border"></div>
+              <img src="static/img/menu-1.png" class="img-responsive" alt="">
+              <div class="carte__item-title">Основное</div>
+              <div class="carte__item-info">
+                <a href="#" class="carte__item-button">Смотреть меню</a><br>
+                <span>или <a href="#" class="carte__item-link">скачать в pdf</a></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-lg-offset-0 col-md-4 col-sm-5 col-xs-12">
+            <div class="carte__item carte__item-2">
+              <div class="carte__item-border"></div>
+              <img src="static/img/menu-2.png" class="img-responsive" alt="">
+              <div class="carte__item-title">Банкетное</div>
+              <div class="carte__item-info">
+                <a href="#" class="carte__item-button">Смотреть меню</a><br>
+                <span>или <a href="#" class="carte__item-link">скачать в pdf</a></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 col-xs-12">
+            <div class="carte__item carte__item-3">
+              <div class="carte__item-border"></div>
+              <img src="static/img/menu-3.png" class="img-responsive" alt="">
+              <div class="carte__item-title">Детское</div>
+              <div class="carte__item-info">
+                <a href="#" class="carte__item-button">Смотреть меню</a><br>
+                <span>или <a href="#" class="carte__item-link">скачать в pdf</a></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-lg-offset-0 col-md-4 col-sm-5 col-xs-12">
+            <div class="carte__item carte__item-4">
+              <div class="carte__item-border"></div>
+              <img src="static/img/menu-4.png" class="img-responsive" alt="">
+              <div class="carte__item-title">Винная карта</div>
+              <div class="carte__item-info">
+                <a href="#" class="carte__item-button">Смотреть меню</a><br>
+                <span>или <a href="#" class="carte__item-link">скачать в pdf</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="angle-down">
+            <a href="#placement" class="angle-down__link">
+              <i class="fa fa-angle-down"></i>
+            </a>
+          </div>
+          <!-- /.angle-down -->
+        </div>
+      </div>
+      <div class="half-tomato" id="tomato"><img src="static/img/half-tomato.png" alt=""></div>
+      <div class="eggplant" id="eggplant"><img src="static/img/eggplant.png" alt=""></div>
+      <div class="papper" id="papper"><img src="static/img/papper.png" alt=""></div>
+    </div>
+  </div>
+  <!-- /.carte -->
+  <div class="placement hidden-xs" id="placement">
+    <div class="container placement-content">
+      <div class="row">
+        <div class="placement__title text-center">
+          Видеотур
+        </div>
+        <!-- /.placement__title -->
+      </div>
+      <div class="row">
+        <div class="placement__button-menu_wrapper">
+          <div class="placement__button-menu">
+            <ul class="placement__button-menu_inner">
+              <li><a href="#">основной зал</a></li>
+              <li><a href="#">второй этаж</a></li>
+              <li><a href="#">банкетный зал</a></li>
+              <li><a href="#">vip зал</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-md-12  col-md-offset-0 col-sm-10 col-sm-offset-1">
+          <div class="placement__slider">
+            <div id="carousel-example-generic" class="carousel slide">
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="static/img/slide-1.png" alt="...">
+                </div>
+                <div class="item">
+                  <img src="static/img/slide-1.png" alt="...">
+                </div>
+              </div>
+              <!-- Controls -->
+              <a class="carousel-arrow-left" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-arrow-right" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <!-- /.placement__slider -->
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="angle-down angle-down_color_black">
+          <a href="#reviews" class="angle-down__link">
+            <i class="fa fa-angle-down"></i>
+          </a>
+        </div>
+        <!-- /.angle-down -->
+      </div>
+    </div>
+    <div class="col-left"><img src="static/img/col-left.png"></div>
+    <div class="col-right"><img src="static/img/col-right.png"></div>
+  </div>
+  <!-- /.placement -->
+  <div class="reviews" id="reviews">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-sm-offset-0 col-xs-6 col-xs-offset-3">
+          <div class="reviews__title">
+            Отзывы о нашем ресторане
+          </div>
+          <!-- /.reviews__title -->
+          <a href="#" class="reviews__button">Смотреть</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.reviews -->
+  <div class="news">
+    <div class="container">
+      <div class="row">
+        <h1 class="news__title">новости</h1>
+      </div>
+      <div class="row">
+        <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-5 col-lg-offset-0">
+          <div class="news__item">
+            <div class="news__item-border"></div>
+            <img src="static/img/news-1.png" class="img-responsive" alt="">
+            <div class="news__item-title">Праздник в Pomegranate Premium</div>
+            <div class="news__item-date">18 августа 2015</div>
+          </div>
+          <!-- /.news__item -->
+        </div>
+        <div class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-0">
+          <div class="news__item">
+            <div class="news__item-border"></div>
+            <img src="static/img/news-2.png" class="img-responsive" alt="">
+            <div class="news__item-title">Праздник мяса</div>
+            <div class="news__item-date">19 сентября 2015</div>
+          </div>
+          <!-- /.news__item -->
+        </div>
+        <div class="col-xs-4 col-xs-offset-4 col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4 col-lg-3 col-lg-offset-0">
+          <div class="news__item">
+            <div class="news__item-border"></div>
+            <img src="static/img/news-3.png" class="img-responsive" alt="">
+            <div class="news__item-title">Скоро в Санкт-Петербурге!</div>
+            <div class="news__item-date">09 августа 2015</div>
+          </div>
+          <!-- /.news__item -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="more">
+          <i class="more__icon"></i>
+          <a class="more__title" href="#">Все нововсти</a>
+        </div>
+        <!-- /.more -->
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="angle-down angle-down_color_black">
+          <a href="#pomegranate" class="angle-down__link">
+            <i class="fa fa-angle-down"></i>
+          </a>
+        </div>
+        <!-- /.angle-down -->
+      </div>
+    </div>
+    <div class="wreath"><img src="static/img/wreath.png" alt=""></div>
+    <div class="balalaika"><img src="static/img/balalaika.png" alt=""></div>
+  </div>
+  <!-- /.news -->
+  <div class="angle" id="pomegranate">
+    <div class="container">
+      <div class="row">
+        <div class="angle__title">
+          Pomegranate Premium -<br>
+          <div class="angle__title_small">уголок Греции в Санкт-Петербурге!</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.angle -->
+  <div class="contacts" id="contacts">
+    <div class="container">
+      <div class="row">
+        <h1 class="contacts__title">контакты</h1>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+          <div class="contacts__item">
+            <div class="contacts__item-icon contacts__item-icon-1 text-center">
+              <img src="static/img/footer-ico-1.png" alt="">
+            </div>
+            <div class="contacts__item-title text-center">Санкт-Петербург, ЖК "Новый город" <br> Новочеркасский проспект, 33</div>
+          </div>
+          <!-- /.contacts__item -->
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <div class="contacts__item">
+            <div class="contacts__item-icon contacts__item-icon-2 text-center">
+              <img src="static/img/footer-ico-2.png" alt="">
+            </div>
+            <div class="contacts__item-title text-center">Часы работы ресторана - <br> с 12 часов дня и до последнего посетителя!</div>
+          </div>
+          <!-- /.contacts__item -->
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <div class="contacts__item contacts__item_last-child">
+            <div class="contacts__item-icon contacts__item-icon-3 text-center">
+              <img src="static/img/footer-ico-3.png" alt="">
+            </div>
+            <div class="contacts__item-title text-center">
+              <div class="contacts__item-phone">8 (812) 643-89-99</div>
+              <div class="contacts__item-email">premium@pome-granate.ru</div>
+              <div class="social-icons clearfix">
+                <div class="social-icons__item social-icons__item-1"><a href="#">B</a></div>
+                <div class="social-icons__item social-icons__item-2"><a href="#"><i class="fa fa-facebook"></i></a></div>
+                <div class="social-icons__item social-icons__item-3"><a href="#"><i class="fa fa-youtube"></i></a></div>
+                <div class="social-icons__item social-icons__item-4"><a href="#"><i class="fa fa-instagram"></i></a></div>
+              </div>
+            </div>
+          </div>
+          <!-- /.contacts__item -->
+        </div>
+      </div>
+    </div>
+    <div class="grapes"><img src="static/img/grapes.png" alt=""></div>
+    <div class="grapes-shadow" id="grapes"><img src="static/img/grapes-shadow.png" alt=""></div>
+  </div>
+  <!-- /.contacts -->
+  <div class="yandex-map">
+    <div id="map"></div>
+  </div>
+  <!-- /.yandex-map -->
+  <div class="footer">
+    <div class="container">
+      <div class="row clearfix">
+        <ul class="footer__list clearfix pull-left">
+          <li>
+            <div class="footer__copyright">
+              2015 Ресторан Pomegranate Premium
+            </div>
+            <div class="footer__advertising hidden-lg">
+              <a href="#"><img src="static/img/footer-banner.png" alt=""></a>
+            </div>
+          </li>
+          <li class="visible-lg">
+            <div class="footer__social">
+              <div class="social-icons clearfix">
+                <div class="social-icons__item social-icons__item-1"><a href="#">B</a></div>
+                <div class="social-icons__item social-icons__item-2"><a href="#"><i class="fa fa-facebook"></i></a></div>
+                <div class="social-icons__item social-icons__item-3"><a href="#"><i class="fa fa-youtube"></i></a></div>
+                <div class="social-icons__item social-icons__item-4"><a href="#"><i class="fa fa-instagram"></i></a></div>
+              </div>
+            </div>
+          </li>
+          <li class="hidden-lg">
+            <div class="footer__social">
+              <div class="social-icons clearfix">
+                <div class="social-icons__item social-icons__item-1"><a href="#">B</a></div>
+                <div class="social-icons__item social-icons__item-2"><a href="#"><i class="fa fa-facebook"></i></a></div>
+                <div class="social-icons__item social-icons__item-3"><a href="#"><i class="fa fa-youtube"></i></a></div>
+                <div class="social-icons__item social-icons__item-4"><a href="#"><i class="fa fa-instagram"></i></a></div>
+              </div>
+            </div>
+            <div class="footer__rosait">
+              Создание сайта - <a href="#"><img src="static/img/rossait.png" alt="" class="logo-rosait"></a>
+            </div>
+          </li>
+          <li class="visible-lg">
+            <div class="footer__rosait">
+              Создание сайта - <a href="#"><img src="static/img/rossait.png" alt="" class="logo-rosait"></a>
+            </div>
+          </li>
+        </ul>
+        <div class="footer__advertising pull-right visible-lg">
+          <a href="#"><img src="static/img/footer-banner.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.footer -->
+</div>
+<script src="static/js/jquery-2.1.4.min.js"></script>
+<script src="static/js/bootstrap.min.js"></script>
+<script src="static/js/owl.carousel.min.js"></script>
+<script src="static/js/site/script.js"></script>
+<script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+<script type="text/javascript">
+  ymaps.ready(init);
+  var myMap;
+  function init () {
+    myMap = new ymaps.Map("map", {
+      center: [59.932022, 30.407883],
+      behaviors: ['default', 'scrollZoom'],
+      zoom: 16
+    });
+    myPlacemark0 = new ymaps.Placemark([59.932022, 30.407883]);
+    myMap.geoObjects
+            .add(myPlacemark0);
+    myMap.controls
+            .add('zoomControl', { left: 5, top: 5 });
+  }
+</script>
+
+</body>
+</html>
